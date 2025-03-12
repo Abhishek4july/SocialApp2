@@ -9,10 +9,10 @@ function AllPosts() {
         appwriteService.getPosts().then((posts) => { 
             if (posts) {
                 setPosts(posts.documents); 
-                console.log("✅ Posts fetched:", posts.documents);
+
             }
         }).catch((error) => {
-            console.error("❌ Error fetching posts:", error);
+
         });
     }, []); 
 
